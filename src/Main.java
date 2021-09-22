@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +26,15 @@ public class Main {
         //while(i<length){
         //    if(someElements[i]==t)
         //}
+
+        //Exercise 8 Write a Java program to copy an array by iterating the array
+        int[] oldArray = {10,20,30,40,50,60,70,80,90};
+        int[] newArray = new int[9];
+        System.out.println("Source array : "+ Arrays.toString(oldArray));
+        for (int i=0; i<oldArray.length;i++){
+            newArray[i]=oldArray[i];
+        }
+        System.out.println("New array: "+Arrays.toString(newArray));
 
         }
     }
